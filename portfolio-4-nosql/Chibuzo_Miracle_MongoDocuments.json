@@ -1,0 +1,269 @@
+{
+  "_comment": "CareLink Clinic — sample MongoDB documents for Portfolio 4. Student: Chibuzo Miracle (301888687). Aligns with Portfolio 1 seed: PAT-1001/1002, DOC-001/003, CL-IKE/CL-VI, MED-AMOX/PARA, LAB-FBC/MP.",
+  "database": "carelink_clinical",
+  "collections": {
+    "patients": [
+      {
+        "patientNumber": "PAT-1001",
+        "firstName": "Ibrahim",
+        "lastName": "Sule",
+        "dateOfBirth": "1990-04-12",
+        "gender": "male",
+        "phone": "+2348030000001",
+        "email": "ibrahim.sule@example.com",
+        "address": {
+          "line1": "8 Opebi Road",
+          "city": "Ikeja"
+        },
+        "emergency": {
+          "name": "Amina Sule",
+          "phone": "+2348030000099"
+        },
+        "preferredBranchCode": "CL-IKE",
+        "createdAt": "2026-01-10T09:00:00Z",
+        "updatedAt": "2026-03-15T11:20:00Z"
+      },
+      {
+        "patientNumber": "PAT-1002",
+        "firstName": "Blessing",
+        "lastName": "Ojo",
+        "dateOfBirth": "1985-11-03",
+        "gender": "female",
+        "phone": "+2348030000002",
+        "email": "blessing.ojo@example.com",
+        "address": {
+          "line1": "22 Herbert Macaulay Way",
+          "city": "Yaba"
+        },
+        "emergency": {
+          "name": "Kunle Ojo",
+          "phone": "+2348030000088"
+        },
+        "preferredBranchCode": "CL-VI",
+        "createdAt": "2026-01-12T10:15:00Z",
+        "updatedAt": "2026-02-28T16:00:00Z"
+      }
+    ],
+    "encounters": [
+      {
+        "encounterKey": "ENC-20260315-1001",
+        "appointmentId": 101,
+        "patientNumber": "PAT-1001",
+        "doctor": {
+          "staffNumber": "DOC-001",
+          "name": "Ada Okeke",
+          "specialtyCode": "GP"
+        },
+        "branch": {
+          "branchCode": "CL-IKE",
+          "name": "CareLink Ikeja"
+        },
+        "encounterAt": "2026-03-15T10:30:00Z",
+        "chiefComplaint": "Fever, headache, and body aches for 3 days",
+        "clinicalNotes": {
+          "subjective": "Patient reports intermittent high-grade fever, frontal headache, and myalgia. No cough. Reduced appetite.",
+          "objective": "Alert, febrile. Mild conjunctival pallor. Chest clear. Abdomen soft.",
+          "assessment": "Suspected malaria; rule out bacterial infection.",
+          "plan": "Order malaria parasite and FBC. Start antipyretic. Review with results same day if critical.",
+          "vitals": {
+            "bpSystolic": 118,
+            "bpDiastolic": 76,
+            "pulse": 98,
+            "tempC": 38.6,
+            "weightKg": 72.4,
+            "spo2": 98
+          },
+          "extraObservations": {
+            "travelHistory": "None in past month",
+            "allergyNotes": "NKDA"
+          }
+        },
+        "diagnoses": [
+          {
+            "icdCode": "B54",
+            "description": "Unspecified malaria",
+            "severity": "moderate",
+            "diagnosedAt": "2026-03-15T10:45:00Z"
+          },
+          {
+            "icdCode": "R50.9",
+            "description": "Fever, unspecified",
+            "severity": "mild",
+            "diagnosedAt": "2026-03-15T10:45:00Z"
+          }
+        ],
+        "prescriptions": [
+          {
+            "medicationCode": "MED-PARA",
+            "medicationName": "Paracetamol",
+            "dosage": "1 g",
+            "frequency": "every 6 hours as needed",
+            "durationDays": 3,
+            "instructions": "Take after food. Do not exceed 4 g in 24 hours.",
+            "status": "dispensed"
+          },
+          {
+            "medicationCode": "MED-AMOX",
+            "medicationName": "Amoxicillin",
+            "dosage": "500 mg",
+            "frequency": "three times daily",
+            "durationDays": 5,
+            "instructions": "Complete the course even if symptoms improve.",
+            "status": "active"
+          }
+        ],
+        "labOrders": [
+          {
+            "testCode": "LAB-MP",
+            "testName": "Malaria Parasite",
+            "status": "completed",
+            "orderedAt": "2026-03-15T10:40:00Z",
+            "resultedAt": "2026-03-15T13:10:00Z",
+            "resultText": "Plasmodium falciparum trophozoites seen (+)",
+            "resultFlag": "abnormal",
+            "resultValues": {
+              "parasite": "P. falciparum",
+              "density": "+"
+            }
+          },
+          {
+            "testCode": "LAB-FBC",
+            "testName": "Full Blood Count",
+            "status": "completed",
+            "orderedAt": "2026-03-15T10:40:00Z",
+            "resultedAt": "2026-03-15T14:00:00Z",
+            "resultText": "Mild anaemia; WBC within reference range",
+            "resultFlag": "abnormal",
+            "resultValues": {
+              "hb_g_dl": 11.2,
+              "wbc_x10e9_l": 6.8,
+              "plt_x10e9_l": 178
+            }
+          }
+        ],
+        "createdAt": "2026-03-15T10:50:00Z"
+      },
+      {
+        "encounterKey": "ENC-20260228-1002",
+        "appointmentId": 205,
+        "patientNumber": "PAT-1002",
+        "doctor": {
+          "staffNumber": "DOC-003",
+          "name": "Ngozi Eze",
+          "specialtyCode": "CARD"
+        },
+        "branch": {
+          "branchCode": "CL-VI",
+          "name": "CareLink Victoria Island"
+        },
+        "encounterAt": "2026-02-28T15:00:00Z",
+        "chiefComplaint": "Palpitations and occasional chest discomfort on exertion",
+        "clinicalNotes": {
+          "subjective": "Episodes of rapid heartbeat lasting 5–10 minutes, worse after climbing stairs. No syncope. Non-smoker.",
+          "objective": "Regular rhythm at rest. No murmurs. Mild peripheral oedema absent.",
+          "assessment": "Possible arrhythmia / anxiety overlap; investigate with labs and ECG (ECG stored outside this document store).",
+          "plan": "Baseline FBC. Lifestyle advice. Cardiology follow-up in 4 weeks. Consider GP liaison at Ikeja if travel difficult.",
+          "vitals": {
+            "bpSystolic": 142,
+            "bpDiastolic": 88,
+            "pulse": 92,
+            "tempC": 36.7,
+            "weightKg": 68.0,
+            "spo2": 99
+          },
+          "extraObservations": {
+            "ecgSummary": "Sinus tachycardia; no acute ischaemic changes reported",
+            "nyhaClass": "I"
+          }
+        },
+        "diagnoses": [
+          {
+            "icdCode": "R00.2",
+            "description": "Palpitations",
+            "severity": "moderate",
+            "diagnosedAt": "2026-02-28T15:25:00Z"
+          },
+          {
+            "icdCode": "I10",
+            "description": "Essential (primary) hypertension",
+            "severity": "mild",
+            "diagnosedAt": "2026-02-28T15:25:00Z"
+          }
+        ],
+        "prescriptions": [
+          {
+            "medicationCode": "MED-PARA",
+            "medicationName": "Paracetamol",
+            "dosage": "500 mg",
+            "frequency": "as needed for headache",
+            "durationDays": 7,
+            "instructions": "Only if required; review BP at follow-up.",
+            "status": "active"
+          }
+        ],
+        "labOrders": [
+          {
+            "testCode": "LAB-FBC",
+            "testName": "Full Blood Count",
+            "status": "completed",
+            "orderedAt": "2026-02-28T15:20:00Z",
+            "resultedAt": "2026-02-28T17:45:00Z",
+            "resultText": "Within reference ranges",
+            "resultFlag": "normal",
+            "resultValues": {
+              "hb_g_dl": 13.1,
+              "wbc_x10e9_l": 5.9,
+              "plt_x10e9_l": 240
+            }
+          }
+        ],
+        "createdAt": "2026-02-28T15:30:00Z"
+      },
+      {
+        "encounterKey": "ENC-20260402-1001",
+        "appointmentId": 118,
+        "patientNumber": "PAT-1001",
+        "doctor": {
+          "staffNumber": "DOC-001",
+          "name": "Ada Okeke",
+          "specialtyCode": "GP"
+        },
+        "branch": {
+          "branchCode": "CL-IKE",
+          "name": "CareLink Ikeja"
+        },
+        "encounterAt": "2026-04-02T09:15:00Z",
+        "chiefComplaint": "Follow-up after malaria treatment; residual fatigue",
+        "clinicalNotes": {
+          "subjective": "Fever resolved. Mild fatigue persists. Appetite improved.",
+          "objective": "Afebrile. Good hydration. Lungs clear.",
+          "assessment": "Recovering post-malaria; fatigue likely convalescent.",
+          "plan": "Supportive care. Return if fever recurs. No new labs today.",
+          "vitals": {
+            "bpSystolic": 120,
+            "bpDiastolic": 78,
+            "pulse": 76,
+            "tempC": 36.8,
+            "weightKg": 71.9,
+            "spo2": 99
+          },
+          "extraObservations": {
+            "allergyNotes": "NKDA",
+            "returnPrecautions": "Fever > 38C, dark urine, confusion"
+          }
+        },
+        "diagnoses": [
+          {
+            "icdCode": "Z09",
+            "description": "Follow-up examination after treatment for other conditions",
+            "severity": "mild",
+            "diagnosedAt": "2026-04-02T09:30:00Z"
+          }
+        ],
+        "prescriptions": [],
+        "labOrders": [],
+        "createdAt": "2026-04-02T09:35:00Z"
+      }
+    ]
+  }
+}

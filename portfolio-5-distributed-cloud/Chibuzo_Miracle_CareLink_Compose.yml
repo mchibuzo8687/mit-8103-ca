@@ -1,0 +1,61 @@
+# Chibuzo_Miracle_CareLink_Compose.yml
+# Local primary (+ optional replica profile) for Portfolio 5 deployment evidence
+# Student: Chibuzo Miracle (301888687)
+# Case study: CareLink Clinic
+#
+# Usage:
+#   docker compose -f Chibuzo_Miracle_CareLink_Compose.yml up -d
+#   psql "postgresql://carelink_app:change_me_lab_only@localhost:5432/carelink" \
+#     -c "SELECT branch_code, name FROM branch ORDER BY branch_id;"
+#
+# Lab password only — never reuse in cloud.
+
+services:
+  carelink-primary:
+    image: postgres:15
+    container_name: carelink-primary
+    environment:
+      POSTGRES_DB: carelink
+      POSTGRES_USER: carelink_app
+      POSTGRES_PASSWORD: change_me_lab_only
+    ports:
+      - "5432:5432"
+    volumes:
+      - carelink_primary_data:/var/lib/postgresql/data
+      - ../portfolio-1-database-design/Chibuzo_Miracle_Schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    command:
+      - postgres
+      - -c
+      - wal_level=replica
+      - -c
+      - max_wal_senders=10
+      - -c
+      - hot_standby=on
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U carelink_app -d carelink"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Optional async-replica stand-in profile for extended lab work.
+  # Full physical standby typically requires pg_basebackup after primary init.
+  carelink-replica:
+    image: postgres:15
+    container_name: carelink-replica
+    environment:
+      POSTGRES_DB: carelink
+      POSTGRES_USER: carelink_readonly
+      POSTGRES_PASSWORD: change_me_lab_only
+    ports:
+      - "5433:5432"
+    volumes:
+      - carelink_replica_data:/var/lib/postgresql/data
+    profiles:
+      - full-replica-lab
+    depends_on:
+      carelink-primary:
+        condition: service_healthy
+
+volumes:
+  carelink_primary_data:
+  carelink_replica_data:
