@@ -19,7 +19,9 @@ Examples:
 
 | File | Document type |
 |------|---------------|
-| `Chibuzo_Miracle_README.md` | Root portfolio README |
+| `Chibuzo_Miracle_README.md` | Root portfolio README (repo guide) |
+| `Chibuzo_Miracle_FinalDocumentation.md` | LMS 2–3 page final summary |
+| `Chibuzo_Miracle_EvidenceNotes.md` | Evidence / screenshot map |
 | `Chibuzo_Miracle_CaseStudy.md` | Case study |
 | `Chibuzo_Miracle_ERDiagram.md` | ER diagram |
 | `Chibuzo_Miracle_Schema.sql` | Relational DDL |
@@ -36,5 +38,6 @@ Examples:
 
 ## GitHub vs LMS
 
-- **GitHub / working copy:** progressive portfolio folders as required by the course brief  
-- **LMS:** submission folder `Chibuzo_Miracle_301888687` with `Chibuzo_Miracle_*` files  
+- **GitHub:** https://github.com/mchibuzo8687/mit-8103-ca — progressive portfolio folders as required by the course brief  
+- **LMS upload:** `Chibuzo_Miracle_FinalDocumentation.md` (2–3 pages); README is not the sole LMS summary  
+- **LMS package folder:** `Chibuzo_Miracle_301888687` with `Chibuzo_Miracle_*` files  

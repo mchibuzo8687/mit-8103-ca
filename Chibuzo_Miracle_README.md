@@ -6,10 +6,18 @@
 **Course:** MIT 8103 Advanced Database Systems  
 **Session:** 2026/2027 Academic Session — First Semester  
 **Assessment:** Continuous Assessment (40 marks)  
-**Type:** Individual Practical Database Portfolio
+**Type:** Individual Practical Database Portfolio  
+
+**GitHub repository:** https://github.com/mchibuzo8687/mit-8103-ca  
 
 Naming rules: see [Chibuzo_Miracle_NamingConvention.md](Chibuzo_Miracle_NamingConvention.md).  
 A short pointer file [README.md](README.md) also exists for repository browsers.
+
+## LMS upload (important)
+
+**Upload to the LMS:** [Chibuzo_Miracle_FinalDocumentation.md](Chibuzo_Miracle_FinalDocumentation.md) (convert/print to ≈2–3 pages as required).  
+
+This README is a **repository guide** only — it is **not** the LMS 2–3 page final summary. Supporting evidence map: [Chibuzo_Miracle_EvidenceNotes.md](Chibuzo_Miracle_EvidenceNotes.md).
 
 ## Case Study
 
@@ -28,9 +36,12 @@ CareLink Clinic is a simulated private outpatient healthcare network with multip
 
 ```text
 Chibuzo_Miracle_301888687/
+├── Chibuzo_Miracle_FinalDocumentation.md  ← LMS 2–3 page summary
+├── Chibuzo_Miracle_EvidenceNotes.md
 ├── Chibuzo_Miracle_README.md
 ├── Chibuzo_Miracle_NamingConvention.md
 ├── README.md
+├── screenshots/
 ├── portfolio-1-database-design/          ← COMPLETE
 ├── portfolio-2-query-optimisation/       ← COMPLETE
 ├── portfolio-3-transactions-concurrency/ ← COMPLETE
@@ -56,4 +67,4 @@ Chibuzo_Miracle_301888687/
 
 ## Academic Integrity
 
-All implementation, analysis, and documentation represent individual work. External sources and any AI assistance will be declared in the final documentation.
+All implementation, analysis, and documentation represent individual work. External sources and AI assistance are declared in [Chibuzo_Miracle_FinalDocumentation.md](Chibuzo_Miracle_FinalDocumentation.md).
