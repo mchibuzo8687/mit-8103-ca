@@ -10,14 +10,14 @@ This file maps existing artefacts only. It does not invent screenshot files.
 
 | File | Typical use for marking |
 |------|-------------------------|
-| `pgerd.pgerd` / `pgerd.pgerd.png` | ER / schema visual from design tooling (Portfolio 1) |
-| `Screenshot 2026-11-14 193135.png` | Tool / workspace capture |
-| `Screenshot 2026-11-14 195301.png` | Tool / workspace capture |
-| `Screenshot 2026-11-14 195326.png` | Tool / workspace capture |
-| `Screenshot 2026-11-14 195658.png` | Tool / workspace capture |
-| `Screenshot 2026-11-14 195942.png` | Tool / workspace capture |
+| `Chibuzo_Miracle_ERDiagram.pgerd` / `Chibuzo_Miracle_ERDiagram_Export.png` | ER / schema visual from design tooling (Portfolio 1) |
+| `Chibuzo_Miracle_Screenshot_2026-11-14_193135.png` | Tool / workspace capture |
+| `Chibuzo_Miracle_Screenshot_2026-11-14_195301.png` | Tool / workspace capture |
+| `Chibuzo_Miracle_Screenshot_2026-11-14_195326.png` | Tool / workspace capture |
+| `Chibuzo_Miracle_Screenshot_2026-11-14_195658.png` | Tool / workspace capture |
+| `Chibuzo_Miracle_Screenshot_2026-11-14_195942.png` | Tool / workspace capture |
 
-Exact screen content should be judged by opening the PNGs; filenames are capture timestamps from the authoring session.
+Exact screen content should be judged by opening the PNGs; timestamps in filenames are from the authoring session.
 
 ## Textual / executable evidence by portfolio
 

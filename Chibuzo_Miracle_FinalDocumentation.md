@@ -54,7 +54,7 @@ Clone or browse this URL for the full portfolio tree (`portfolio-1` … `portfol
 
 | Location | What assessors find |
 |----------|---------------------|
-| `screenshots/` | ER / tool captures (e.g. `pgerd.pgerd.png`, dated `Screenshot 2026-11-14 *.png`) — see `Chibuzo_Miracle_EvidenceNotes.md` for a short map |
+| `screenshots/` | ER / tool captures (e.g. `Chibuzo_Miracle_ERDiagram_Export.png`, `Chibuzo_Miracle_Screenshot_2026-11-14_*.png`) — see `Chibuzo_Miracle_EvidenceNotes.md` for a short map |
 | Portfolio folders | Source SQL, Mongo/Redis scripts, architecture write-ups listed in §2 |
 | Portfolio READMEs | Run order (`psql` / `mongosh` / compose) and evidence labelling where live dual-session demos were documented realistically |
 

@@ -28,6 +28,9 @@ Examples:
 | `Chibuzo_Miracle_KeysConstraints.md` | Keys and constraints |
 | `Chibuzo_Miracle_Normalisation.md` | Normalisation write-up |
 | `Chibuzo_Miracle_Portfolio1_README.md` | Portfolio 1 guide |
+| `Chibuzo_Miracle_ERDiagram.pgerd` | ER design tool source (screenshots/) |
+| `Chibuzo_Miracle_ERDiagram_Export.png` | ER diagram image export |
+| `Chibuzo_Miracle_Screenshot_YYYY-MM-DD_HHMMSS.png` | Evidence screenshots (no spaces) |
 
 ## Rules
 
